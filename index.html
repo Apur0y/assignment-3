@@ -74,10 +74,10 @@
               </ul>
             </div>
             <div class="navbar-end gap-4 ml-10">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-9 bg-[#e1e2e2] rounded-3xl p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-9 bg-[#e1e2e2] rounded-3xl p-1 invisible md:visible">
                     <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 bg-[#e1e2e2] rounded-3xl p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 invisible md:visible bg-[#e1e2e2] rounded-3xl p-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                   </svg>
                   
@@ -92,7 +92,7 @@
 
     <div class="flex flex-col justify-items-center gap-7 mt-6">
         <img src="./B10-Assignment-03-main/assets/banner.png" alt="" class="w-[570px] mx-auto">
-        <h1 class="text-6xl font-black text-center text-black">A barn house of this design has a <br/> striking appearance</h1>
+        <h1 class="text-3xl md:5xl lg:text-6xl font-black text-center text-black">A barn house of this design has a <br/> striking appearance</h1>
         <p class="text-center text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br/> accents, and large windows that flood the space with natural light.</p>
         <a class="btn bg-[#ABEF5F] text-xl rounded-3xl w-[206px] mx-auto font-extrabold">View Details<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 bg-black text-white  rounded-xl p-1">
             <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
@@ -159,8 +159,8 @@
     </svg>How we works
     </a>
   </div>  
-        <h1 class="text-4xl font-extrabold text-center">Our Works Process</h1>
-        <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, <br/> featuring weathered wood, sleek metal accents.</p>
+        <h1 class="text-2xl md:text-4xl font-black text-center">Our Works Process</h1>
+        <p class="text-center px-2 md:px-0">The barn house captivates with its blend of rustic charm and modern sophistication, <br/> featuring weathered wood, sleek metal accents.</p>
       </div>
       <div class="flex flex-col items-center justify-center lg:flex-row gap-4 p-5 ">
         <div class="bg-[#E7C1D3] w-72 rounded-xl p-7 flex flex-col gap-3">
@@ -253,11 +253,93 @@
 
       </div>
 
-      <div class="flex flex-col md:container mx-auto w-9/12 bg-[url('./B10-Assignment-03-main/assets/bg.jpg')] bg-no-repeat bg-center mt-14">
+
+      <div class="my-12 border m-11 bg-white shadow-lg rounded-lg">
+        <div class="text-center"> 
+          <a class="btn bg-[#e2ffc2] rounded-3xl mt-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>Have a look in Reviews
+        </a>
+      </div>
+      <div>
+      <h1 class="text-4xl font-extrabold text-center my-6">Client Reviews</h1>
+      <p class="text-center">Check out some of our recent reviews. You can get some idea about the quality we provide.</p>
+    </div>
+    
+    <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+     
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <img class="w-16 h-16 rounded-full" src="./B10-Assignment-03-main/assets/person3.jpeg" alt="Client Photo">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold">John Doe</h3>
+              <div class="rating rating-sm">
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-yellow-400" checked/>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">The design was exceptional, and the service was prompt. Highly recommended!</p>
+        </div>
+    
+        <!-- Review 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <img class="w-16 h-16 rounded-full" src="./B10-Assignment-03-main/assets/person2.jpeg" alt="Client Photo">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold">Jane Smith</h3>
+              <div class="rating rating-sm">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">The project was completed ahead of schedule. Very professional!</p>
+        </div>
+    
+        <!-- Review 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <img class="w-16 h-16 rounded-full" src="./B10-Assignment-03-main/assets/person1.jpg" alt="Client Photo">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold">Alice Johnson</h3>
+              <div class="rating rating-sm">
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-400" checked />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-400" checked />
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">Amazing experience! The design exceeded my expectations.</p>
+        </div>
+      </div>
+    
+      <!-- Show More Button -->
+      <div class="text-center mt-8">
+        <a class="btn bg-[#ABEF5F] text-xl rounded-3xl w-[206px] mx-auto font-extrabold">Show More<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 bg-black text-white  rounded-xl p-1">
+          <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+        </svg></a>   </div>
+    </div>
+    
+      </div>
+
+
+
+      <div class="flex flex-col md:container bg-cover w-full  mx-auto bg-[url('./B10-Assignment-03-main/assets/bg.jpg')] bg-no-repeat bg-center mt-14">
         <div>
           <div>
               <!-- title -->
-              <div class="text-center">
+              <div class="text-center mt-16">
   <a class="btn bg-[#e2ffc2] rounded-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
   </svg>Let's Connect
@@ -265,15 +347,15 @@
               </div>
 
               <div>
-                <h1 class="text-4xl font-extrabold text-center">Let's Discuss Next Project</h1>
-                <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication,<br/> featuring weathered wood, sleek metal accents.</p>
+                <h1 class="text-2xl md:text-4xl font-black text-center my-5">Let's Discuss Next Project</h1>
+                <p class="text-center mb-5 px-2 md:px-0">The barn house captivates with its blend of rustic charm and modern sophistication,<br/> featuring weathered wood, sleek metal accents.</p>
 
               </div>
 
             
           </div>
 
-          <div class="grid gap-5 grid-cols-2 px-28">
+          <div class="flex flex-col px-10 md:grid gap-5  md:grid-cols-2 xl:mx-28 md:px-28">
             <!-- form -->
             <input
             type="text"
@@ -302,7 +384,7 @@
   
                
           </div>
-          <div class="text-center">
+          <div class="text-center mt-7 mx-auto w-[65%] mb-16 ">
             <a class="btn bg-[#ABEF5F] text-base w-full rounded-3xl font-extrabold ">Send Mail<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 bg-black text-white  rounded-xl p-1">
               <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
             </svg></a>
@@ -310,11 +392,45 @@
 
         </div>
 
-      </div>
+
+
+
+
+      
 
    </main>
 
-   <footer>
+   <footer class="bg-black py-20">
+    <div class="text-center flex flex-col gap-4">
+      <!-- footer head -->
+      <a class="btn btn-ghost text-3xl font-extrabold text-white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 bg-[#ABEF5F] text-black  rounded-xl p-1">
+        <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+      </svg>Rinterio</a>
+        
+      <p class="text-[#6d7279]">The barn house captivates with its blend of rustic charm and modern sophistication,<br/> featuring weathered wood, sleek metal accents.</p>
+    </div>
+
+    <div class="my-9">
+      <!-- footer nav -->
+      <div class="flex justify-center items-center lg:flex">
+        <ul class="menu menu-horizontal px-1 flex flex-col lg:flex-row lg:gap-16">
+          <li><a href="" class=" text-white">Home</a></li>
+          <li><a href="" class="text-white">Services</a></li>
+          <li><a href="" class="text-white">Portfolio</a></li>
+          <li><a href="" class="text-white">Blogs</a></li>
+          <li><a href="" class="text-white">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <!-- footer btn -->
+      <a class="btn bg-[#ABEF5F] text-base rounded-3xl font-extrabold mx-auto">Book Consult<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 bg-black text-white  rounded-xl p-1">
+        <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+      </svg></a>
+    </div>
+  
 
    </footer>
     
